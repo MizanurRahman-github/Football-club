@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    padding: 0px;
+    
 }
 /* ========================
     header area start
@@ -36,6 +36,8 @@ h1, h2{
     color: white;
     margin-top: 27px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
     
 }
 .btn:hover{
@@ -49,7 +51,7 @@ h1, h2{
 }
 .header-banner img:hover{
     box-shadow: 1px 1px 10px blueviolet;
-    transition: 1s;
+    transition: 0.5s;
 }
 /* =========================
     header area end 
@@ -66,7 +68,6 @@ h1, h2{
 .card{
     width: 280px;
     height: 474px;
-    
     box-shadow: 2px 2px 5px black;
 }
 .all-cards{
@@ -94,4 +95,136 @@ h3{
 
 /* ===============================
     card section end 
+================================== */
+
+/* ===============================
+    extra section start 
+================================== */
+
+
+.etext{
+    height: 400px;
+    background-color: rgb(24, 22, 22);
+    opacity: 0.7;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 30px;
+}
+.etext h5{
+    font-size: 32px;
+    margin-top: 10px;
+    line-height: 10px;
+    color: white;
+}
+.buy-btn{
+    text-decoration: none;
+    height: 20px;
+    width: 40px;
+    padding: 5px 20px;
+    background-color:rgba(255, 0, 0, 0.747);
+    color: white;
+    border-radius: 5px;
+}
+
+/* ===============================
+    extra section end 
+================================== */
+
+
+/* ========================
+    footer area start 
+========================== */
+.footer-container{
+    justify-content: center;
+    text-align: center;
+}
+.footer-logo img{
+    height: 110px;
+    width: 484px;
+}
+.fab{
+    height: 32px;
+    width: 32px;
+}
+
+/* ========================
+    footer area end 
+========================== */
+
+/* ===============================
+    media query section start 
+================================== */
+
+@media only screen and (max-width:688px) {
+    .container, .all-cards{
+        margin-top: 0px;
+        flex-direction: column;
+        height: 100%;
+        padding-right: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .all-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn{
+        text-align: center;
+        margin-left: 120px;
+    }
+    .header-banner img{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 500px;
+    }
+    .etext h5{
+        font-size: 24px;
+    }
+    .footer-logo img{
+        height: 100px;
+        width: 80%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:988px) {
+    .container, .all-cards{
+        margin-top: 0px;
+        flex-direction: column;
+        height: 100%;
+        padding-right: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .all-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn{
+        text-align: center;
+        margin-left: 120px;
+    }
+    .header-banner img{
+        width: 70%;
+    }
+    .card{
+        width: 100%;
+        height: 500px;
+    }
+    .etext h5{
+        font-size: 24px;
+    }
+    .footer-logo img{
+        height: 100px;
+        width: 60%;
+    }
+    
+}
+
+
+/* ===============================
+    media query section end 
 ================================== */
