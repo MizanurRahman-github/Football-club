@@ -54,6 +54,10 @@ h1, h2{
 /* =========================
     header area end 
 ============================ */
+
+/* ===============================
+    card section start 
+================================== */
 .all-cards{
     margin-top: 70px;
     margin-left: 190px;
@@ -62,7 +66,7 @@ h1, h2{
 .card{
     width: 280px;
     height: 474px;
-    /* border: 2px solid black; */
+    
     box-shadow: 2px 2px 5px black;
 }
 .all-cards{
@@ -87,3 +91,7 @@ h3{
     text-align: justify;
     padding-right: 3px;
 }
+
+/* ===============================
+    card section end 
+================================== */
